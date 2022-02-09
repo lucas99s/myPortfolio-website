@@ -125,6 +125,13 @@ body {
     width: 15rem;
 }
 
+.social-midia a:nth-child(1) {
+    margin-right: 0.25rem;
+}
+.social-midia a:nth-child(2) {
+    margin-left: 0.25rem;
+}
+
 .more p, #arrow {
     color: rgba(255, 255, 255, 0.521);
     position: absolute;
@@ -280,7 +287,7 @@ body {
     width: 45%;
 
     /*Revisar se vale a pena mudar*/
-    max-width: 400px;
+    max-width: 25rem;
 
     height: 31.25rem;
     display: flex;
@@ -442,46 +449,40 @@ footer h1 {
 
 /* Media queries */
 
-@media only screen and (max-width: 1200px) {
-    .presentation h1 {
-        margin-top: 0;
-    }
+/*
 
-    .card p {
-        font-size: .9rem;
-        margin: 3.5rem 2rem 0 2rem;
-    }
+Comandos importantes
 
-    .card h1 {
-        font-size: 1.6rem;
-    }
 
+
+
+    
+
+
+
+
+*/
+
+@media only screen and (max-width : 950px) {
+        
     .contact {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .cards-conteiner {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
 
     .card {
         width: 100%;
     }
 
-    .card:nth-child(2) {
-        margin-top: 50px;
+    .cards-conteiner {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 @media only screen and (max-width: 700px) {
-
-    .me {
-        margin: auto;
-        margin-top: 50px;
-        width: 80%;
+    * {
+        font-size: 13px;
     }
 
     .presentation {
@@ -492,36 +493,26 @@ footer h1 {
         width: 100%;
     }
 
+    .me {
+        margin: auto;
+        margin-top: 50px;
+        width: 80%;
+    }
+
+    .presentation h1 {
+        margin-top: 0;
+    }
+
     .contact {
-        flex-direction: column;
-        text-align: center;
+        width: 100%;
     }
+
+
 }
 
-@media only screen and (min-width: 501px) {
-    .social-midia a:nth-child(1) {
-        margin-right: 4px;
-    }
-    .social-midia a:nth-child(2) {
-        margin-left: 4px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    
-    .about {
-        position: relative;
-        top: -50px;
-    }
-
-
-    .about h1 {
-        font-size: 3rem;
-    }
-
-    .about h2 {
-        font-size: 1rem;
-        letter-spacing: .21rem;
+@media only screen and (max-width: 400px) {
+    * {
+        font-size: 10px;
     }
 
     .social-midia {
@@ -529,102 +520,23 @@ footer h1 {
         align-items: center;
     }
 
-    .social-midia a {
-        width: 100%;
-        font-size: 1.2rem;
-        margin-bottom: 10px;
+    .social-midia a:nth-child(1) {
+        margin-right: 0;
     }
-
-    .line {
-        width: 100px;
-        top: 2.3rem;
-        height: 0.25rem;
-    }
-
-    .presentation h1 {
-        font-size: 3rem;
-    }
-
-    .presentation p {
-        font-size: 1rem;
-        line-height: 1.3rem;
-    }
-
-    .line2 {
-        margin-top: -10px;
-        height: 0.25rem;
-    }
-
-    .projects-title h1 {
-        font-size: 3rem;
-    }
-
-    .line3 {
-        top: 2.5rem;
-        height: 0.25rem;
-    }
-
-    .card h1 {
-        font-size: 1.4rem;
-    }
-
-    .card p {
-        font-size: .8rem;
-    }
-
-    .contact p {
-        font-size: 1.2rem;
-    }
-
-    .copyright {
-        font-size: .8rem;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    .about h1 {
-        font-size: 2rem;
-    }
-
-    .about h2 {
-        font-size: .75rem;
-        letter-spacing: .11rem;
+    .social-midia a:nth-child(2) {
+        margin-left: 0;
     }
 
     .social-midia a {
+        margin-top: 1rem;
         width: 100%;
-        font-size: 1rem;
         padding: 5px;
         border-radius: .7rem;
     }
+}
 
-    .line {
-        width: 70px;
-        top: 1.7rem;
-        height: 0.2rem;
-    }
-
-    .projects-title h1 {
-        font-size: 2.5rem;
-    }
-
-    .line3 {
-        top: 2rem;
-    }
-
-    .card p {
-        font-size: .7rem;
-    }
-
-    footer h1 {
-        font-size: 3rem;
-    }
-
-    .contact p {
-        font-size: 1rem;
-    }
-
-    .copyright {
-        font-size: .7rem;
+@media only screen and (max-width: 320px) {
+    * {
+        font-size: 9px;
     }
 }
