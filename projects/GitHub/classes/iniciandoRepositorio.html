@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../lessonStyle.css">
+</head>
+<body>
+    <div class="back">
+        <a href="../index.html">Voltar</a>
+    </div>
+    <div class="container">
+        <h1>Iniciando repositório</h1>
+        <p>
+            Iniciar um novo repositório é muito simples, mas antes de criar, você precisa abrir o git bash no diretório que você deseja iniciar o repositório.
+        </p>
+        <p>
+            Feito isso, tudo o que você necessita fazer é o seguinte comando:
+        </p>
+        <div class="code">
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div>
+            </div>
+            <div class="command">
+                $ git init
+            </div>
+        </div>
+
+        <p>Ao iniciar, você perceberá que na linha seguinte aparecerá em azul, a branch que você está (master).</p>
+
+        <div class="code">
+            <div class="command">
+                $ git init
+            </div>
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+        </div>
+
+        <p>Depois falaremos mais sobre o que são branches.</p>
+        <p>Digitando 'ls -la', você conseguirá ver todos os diretórios e arquivos que o Git está enxergando no diretório iniciado.</p>
+        <p>Abaixo você verá um exemplo de como isso pode aparecer pra você. Os arquivos que você verá são os atuais arquivos deste site no momento em que eu estava produzindo essa página.</p>
+
+        <div class="code">
+            <div class="command">
+                $ git init
+            </div>
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+            <div class="command">
+                
+                <ul>
+                    <li>$ ls - la</li>
+                    <li>drwxr-xr-x 1 Lucas 197609    0 Feb  3 21:27 ./</li>
+                    <li>drwxr-xr-x 1 Lucas 197609    0 Feb  3 19:27 ../</li>
+                    <li>drwxr-xr-x 1 Lucas 197609    0 Feb  4 11:32 .git/</li>
+                    <li>drwxr-xr-x 1 Lucas 197609    0 Feb  3 19:35 .vscode/</li>
+                    <li>-rw-r--r-- 1 Lucas 197609  972 Feb  3 22:26 criandoPasta.html</li>
+                    <li>-rw-r--r-- 1 Lucas 197609  749 Feb  3 21:37 index.html</li>
+                    <li>-rw-r--r-- 1 Lucas 197609 1724 Feb  4 11:31 iniciandoRepositorio.html</li>
+                    <li>-rw-r--r-- 1 Lucas 197609 1268 Feb  3 22:25 lessonStyle.css</li>
+                    <li>-rw-r--r-- 1 Lucas 197609 1491 Feb  3 22:32 style.css</li>
+                </ul>                
+            </div>
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+        </div>
+        <p>Nessa lista você pode ver coisas importantes, como a última vez que o arquivo foi atualizado.</p>
+    </div>
+</body>
+
+<footer></footer>
+</html>

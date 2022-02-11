@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../lessonStyle.css">
+
+    <style>
+        .files {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <a href="../index.html">Voltar</a>
+    </div>
+    <div class="container">
+        <h1>Desfazendo mudanças</h1>
+
+        <p>Em breve estarei atualizando as explicações.</p>
+
+        <p>Volta o arquivo pra antes da edição</p>
+
+        <div class="code">
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+            <ul>
+                <li>$ git checkout</li>
+            </ul>
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+        </div>
+
+        <p>Esse é caso o arquivo esteja na fila do staged pronto para o commit, então esse comando vai tirar ele do staged e vai voltar ele fora do staged com as alterações</p>
+        
+        <div class="code">
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+            <ul>
+                <li>$ git reset HEAD nomeDoArquivo</li>
+            </ul>
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+        </div>
+
+        <p>Vai tirar remover o commit, mas vai deixar o arquivo pronto para ser commitado</p>
+
+        <div class="code">
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+            <ul>
+                <li>$ git reset --soft hash</li>
+            </ul>
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+        </div>
+
+        <p>Vai tirar remover o commit e deixá-lo unstagged com todas as alterações</p>
+
+        <div class="code">
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+            <ul>
+                <li>$ git reset --mixed hash</li>
+            </ul>
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+        </div>
+
+        <p>Vai matar o commit e todas as alterações dele</p>
+
+        <div class="code">
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+            <ul>
+                <li>$ git reset --hard hash</li>
+            </ul>
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer></footer>
+</html>

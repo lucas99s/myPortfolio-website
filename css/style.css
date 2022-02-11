@@ -16,19 +16,21 @@ body {
 
 :root {
     --main-color: #29639E;
-    --main-color-transparent: rgba(2, 0, 34, 0.84);
-    /* --secondary-color: rgb(255, 187, 0); */
+    --main-color-transparent: rgba(2, 0, 34, 0.88);
     --secondary-color: yellow;
-    --bg-color: white;
-    /* --bg-color: rgb(221, 221, 221); */
     --text-color: #1b1b1b;
+    --bg-color: white;
+    /* --secondary-color: rgb(255, 187, 0); */
+    /* --bg-color: rgb(221, 221, 221); */
+    /* --text-color: rgba(255, 255, 255, 0.781); */
+    /* --bg-color: rgb(19, 26, 63); */
     --code: 'Source Code Pro', monospace;
 
     /* Cards */
 
     --bg-card: rgba(0, 28, 46, 0.075);
     --bg-card-gradient: rgb(7, 9, 19);
-    --bg-card-hover: rgba(0, 0, 22, 0.705);
+    --bg-card-hover: rgba(0, 0, 22, 0.920);
     --card-text: white;
     --card-button: yellow;
     --card-text-button: #1b1b1b;
@@ -70,7 +72,7 @@ body {
     margin-top: -5%;
 }
 
-.about h1, h2, .social-midia {
+.about h1, h2, .cButton {
     color: white;
     position: relative;
     z-index: 2;
@@ -98,17 +100,17 @@ body {
     left: 0.2rem;
 }
 
-.social-midia {
+.cButton {
     display: flex;
     justify-content: center;
     flex-direction: row;
     margin-top: 3rem;
 }
 
-.social-midia a {
+.cButton a {
     padding: .6rem;
     flex-grow: 1;
-    width: 165px;
+    width: 10.31rem;
     text-align: center;
     text-decoration: none;
     font-size: 2rem;
@@ -119,18 +121,39 @@ body {
     /* transition: cubic-bezier(0.75, 0, 0.21, 0.99) 0.5s; */
 }
 
-.social-midia a:hover {
+.cButton a:hover {
     background-color: var(--secondary-color);
     color: var(--text-color);
     width: 15rem;
 }
 
-.social-midia a:nth-child(1) {
+.cButton a:nth-child(1) {
     margin-right: 0.25rem;
 }
-.social-midia a:nth-child(2) {
+.cButton a:nth-child(2) {
     margin-left: 0.25rem;
 }
+
+/* .resume {
+    position: relative;
+    top: -2rem;
+    padding: 0;   
+}
+
+.resume .cButton {
+    margin: 0 auto;
+    width: 20rem;
+}
+
+.resume .cButton a {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+.resume .cButton a:hover {
+    color: var(--card-text-button);
+    letter-spacing: .1rem;
+} */
 
 .more p, #arrow {
     color: rgba(255, 255, 255, 0.521);
@@ -209,7 +232,6 @@ body {
     /* flex-grow: 1; */
     margin-right: 10%;
     object-fit: contain;
-    
 }
 
 .presentation div {
@@ -239,7 +261,7 @@ body {
     right: 0;
 }
 
-.presentation p {
+.presentation p, .presentation a {
     font-size: 1.2rem;
     color: var(--text-color);
 }
@@ -284,6 +306,7 @@ body {
 
 .card {
     margin-top: 3.12rem;
+    margin-bottom: 1.5rem;
     width: 45%;
 
     /*Revisar se vale a pena mudar*/
@@ -297,8 +320,10 @@ body {
     position: relative;
     flex-wrap: wrap;
     border-radius: 1rem;
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.267); */
 
     /* Background */
+    background-position: 50%;
     background-size: cover;
     opacity: 1;
 }
@@ -352,6 +377,11 @@ body {
     /* text-align: justify; */
     letter-spacing: .1rem;
 }
+
+.card > p:nth-of-type(2) {
+    margin: 1rem 4rem 0 4rem;
+}
+
 .card-button {
     margin: auto auto 3.12rem auto;
     position: relative;
@@ -449,19 +479,6 @@ footer h1 {
 
 /* Media queries */
 
-/*
-
-Comandos importantes
-
-
-
-
-    
-
-
-
-
-*/
 
 @media only screen and (max-width : 950px) {
         
@@ -515,19 +532,19 @@ Comandos importantes
         font-size: 10px;
     }
 
-    .social-midia {
+    .cButton {
         flex-direction: column;
         align-items: center;
     }
 
-    .social-midia a:nth-child(1) {
+    .cButton a:nth-child(1) {
         margin-right: 0;
     }
-    .social-midia a:nth-child(2) {
+    .cButton a:nth-child(2) {
         margin-left: 0;
     }
 
-    .social-midia a {
+    .cButton a {
         margin-top: 1rem;
         width: 100%;
         padding: 5px;

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../lessonStyle.css">
+</head>
+<body>
+    <div class="back">
+        <a href="../index.html">Voltar</a>
+    </div>
+    <div class="container">
+        <h1>Ciclo de vida dos Status dos Arquivos</h1>
+        <p>
+            Existem 4 estados em que um arquivo pode estar.
+        </p>
+        <img src="img/statusFiles.png">
+        <p>
+            <b class="red">Untracked</b> se refere aos arquivos novos ou que foram removidos do git que o git não reconhece. <br>
+            <b class="green">Unmodified</b> são os arquivos que foram comitados e não sofreram modificação após esse commit. <br>
+            <b class="yellow">Modified</b> são os arquivos que após terem sido comitados, foram alterado. <br>
+            <b class="blue">Staged</b> está relacionado aos arquivos que estão prontos para serem comitados. Após esse commit, os arquivos passam a ter o status de unmodified.
+        </p>
+        <p>O comando para você reconhecer os status do seus arquivos é o 'git status'</p>
+        <div class="code">
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+
+            <div class="command">
+                <ul>
+                    <li>$ git status</li>
+                    <li>On branch master</li>
+                    <li>Changes not staged for commit:</li>
+                    <ul class="focus red">
+                        <li>modified:   index.html</li>
+                        <li>modified:   iniciandoRepositorio.html</li>
+                        <li>modified:   lessonStyle.css </li>
+                        <li>modified:   style.css</li>
+                    </ul>
+                    <li>Untracked files:</li>
+                    <ul class="focus red">
+                        <li>img/</li>
+                        <li>statusDosArquivos.html</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+
+        </div>
+        <p>Esses são os arquivos alterados e criados no momento em que produzo essa página, você pode notar que os primeiros 4 arquivos em vermelho, são os que já tinha sido comitados anteriormente, por isso estão marcados como modified, pois a versão que foi comitada e essa não são iguais.</p>
+            
+        <p> Os dois últimos estão com o status de Untracked, ou seja, eles são novos e nunca foram comitados antes. O primeiro é referente a pasta nova, onde armazenarei imagens como aquela no topo, e o segundo é essa página.</p>
+
+        <p>Para que os arquivos possam ser comitados, primeiro necessita colocar ele 'on stage', o comando para isso é git add 'nomeDoArquivo'. Podemos fazer isso para cada um do arquivo, mas como tem mais de um arquivo que precisa ser colocado on stage, podemos usar o '*', para se referir a todos que não foram adicionados.</p>
+
+        <div class="code">
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+
+            <ul>
+                <li>$ git add *</li>
+            </ul>
+
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>          
+        </div>
+
+        <p>Feito isso, tanto os arquivos com o status unmodified, quanto os untracked foram colocados on stage e estão prontos para serem comitados. Você pode conferir isso digitando 'git status'.</p>
+
+        <div class="code">
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>           
+
+            <div class="command">
+                <ul>
+                    <li>$ git status</li>
+                    <li>On branch master</li>
+                    <li>Changes to be committed:</li>
+                    <ul class="focus green">
+                        <li>new file:   img/statusFiles.png</li>
+                        <li>modified:   index.html</li>
+                        <li>modified:   iniciandoRepositorio.html</li>
+                        <li>modified:   lessonStyle.css</li>
+                        <li>new file:   statusDosArquivos.html</li>
+                        <li>modified:   style.css</li>
+                    </ul>
+                </ul>            
+            </div>
+        </div>
+
+        <p>Note que você consegue ver que os arquivos que antes eram untracked, agora no stage estão como 'new file'.</p>
+
+        <p>Com os arquivos on stage, agora eles estão prontos para serem comitados. O comando é 'git commit -m "mensagem" '.</p>
+
+        <p>O '-m' é o comando que diz que você irá adicionar uma mensagem, e em seguida você pode descrever o que você está adicionando/atualizando por exemplo.</p>
+
+        <div class="code">
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>      
+            
+            <ul>
+                <li>$ git commit -m 'Nova página adicionada e atualização de estilo'</li>
+            </ul>
+
+        </div>
+        
+        <p>E pronto, você acaba de comitar os seus arquivos. Você pode usar o 'git status' para verificar se está tudo certo. As vezes pode acontecer de você esquecer algum arquivo fora do stage, e esse comando irá te mostrar se tiver algum arquivo pendente para ser comitado, mas nesse caso, como você pode notar, não há mais nada para ser comitado.</p>
+
+        <div class="code">
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+
+            <div class="command">
+                <ul>
+                    <li>$ git status</li>
+                    <li>On branch master</li>
+                    <li>nothing to commit, working tree clean</li>
+                </ul>                
+            </div>
+
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer></footer>
+</body>
+</html>
