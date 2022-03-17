@@ -304,18 +304,16 @@ body {
 .cards-conteiner {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     transition: cubic-bezier(0.75, 0, 0.21, 0.99) 0.5s;
+    flex-wrap: wrap;
 }
 
 .card {
     margin-top: 3.12rem;
     margin-bottom: 1.5rem;
     width: 45%;
-
-    /*Revisar se vale a pena mudar*/
     max-width: 25rem;
-
     height: 31.25rem;
     display: flex;
     flex-direction: column;
@@ -374,7 +372,7 @@ body {
 .card p {
     opacity: 0;
     z-index: 1;
-    margin: 3.5rem 4rem 0 4rem;
+    margin: 3.5rem 3.5rem 0 3.5rem;
     color: white;
     transition: inherit;
     font-size: 1rem;
@@ -383,7 +381,7 @@ body {
 }
 
 .card > p:nth-of-type(2) {
-    margin: 1rem 4rem 0 4rem;
+    margin: 1rem 3.5rem 0 3.5rem;
 }
 
 .card-button {
@@ -420,7 +418,7 @@ body {
 }
 
 .card-button:hover {
-    padding: 0.62rem 5.5rem;
+    padding: 0.62rem 6.4rem;
     margin-bottom: 3.12rem;
 }
 
