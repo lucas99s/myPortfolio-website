@@ -12,10 +12,18 @@ html {
     scroll-behavior: smooth;
 }
 
+h1 {
+    font-size: 4rem;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg-color);
     /* height: 2000px; */
+}
+
+section {
+    margin: 3rem 0;
 }
 
 :root {
@@ -224,7 +232,7 @@ body {
 .presentation {
     display: flex;
     width: 100%;
-    margin: 4rem auto;
+    margin: 0rem auto;
 }
 
 .introduction {
@@ -246,7 +254,6 @@ body {
 
 .presentation h1 {
     margin-top: 6.25rem;
-    font-size: 4rem;
     width: 100%;
     color: var(--text-color);
 }
@@ -274,10 +281,56 @@ body {
     font-family: var(--code);
 }
 
+/* Languages */
+
+.dev-languages {
+    font-family: var(--code);
+    text-align: center;
+    /* background-color: #29639E; */
+    border-radius: 2rem;
+}
+
+.dev-languages h1 {
+    margin-bottom: 2rem;
+}
+
+.dev-languages h2 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.dev-languages h3 {
+    color: var(--text-color);
+}
+
+.dev-languages-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dev-languages-cards li {
+    margin: 1rem auto;
+}
+
+.dev-languages-cards li img {
+    height: 10rem;
+}
+
+.dev-title {
+    width: 13rem;
+    margin: 2rem auto;
+}
+
+.dev-title h1 {
+    display: flex;
+    margin: 0;
+}
+
 /* Projects */
 
 .projects {
-    margin: 1.25rem auto;
+    margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -381,6 +434,9 @@ body {
 }
 
 .card > p:nth-of-type(2) {
+    margin: 1rem 3.5rem 0 3.5rem;
+}
+.card > p:nth-of-type(3) {
     margin: 1rem 3.5rem 0 3.5rem;
 }
 

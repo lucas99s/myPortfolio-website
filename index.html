@@ -55,62 +55,89 @@
     <div class="transition"></div>
     
     <main class="conteiner">
-        <div  id="presentation"></div>
-        <!-- <h1 class="presentation-title">Quem sou eu</h1> -->
-        <div class="presentation">
-            <img src="img/me.png" class="me">
-            <div class="introduction">
-                <h1>Olá!<div class="line2"></div></h1>
-                <p>Sou um estudante de Análise e Desenvolvimento de Sistemas no Senac. Entrei na faculdade em outubro de 2021, mas estudo programação desde 2018, atualmente sei programar em HTML, CSS (avançados), JavaScript (intermediário). Eu tenho também uma noção de UX/UI, pois apesar de não ter estudado a área a fundo, tenho 8 anos de experiência com design gráfico, o que me facilita bastante quando quero fazer um protótipo de uma interface antes de começar a programar. Apesar de estar me tornando um desenvolvedor full stack, eu não me importaria em ser contratado para trabalhar em apenas umas das stacks, pois as duas áreas me interessam bastante.
-                <br><br> Atualmente estou a procura de oportunidades de estágio que me possibilite crescer profissionalmente na área. Sou bastante auto motivado e me esforçarei ao meu máximo para aprender e cooperar com a equipe que irei trabalhar. <a href="https://drive.google.com/file/d/1K5BrLQyIqR6ThyOQx7-Jco8QxpamE0rI/view?usp=sharing" target="_blank">Acesse meu currículo aqui.</a><p>
+        <section>
+            <div  id="presentation"></div>
+            <!-- <h1 class="presentation-title">Quem sou eu</h1> -->
+            <div class="presentation">
+                <img src="img/me.png" class="me">
+                <div class="introduction">
+                    <h1>Olá!<div class="line2"></div></h1>
+                    <p>Sou um estudante de Análise e Desenvolvimento de Sistemas no Senac. Entrei na faculdade em outubro de 2021, mas estudo programação desde 2018, atualmente sei programar em HTML, CSS (avançados), JavaScript (intermediário). Eu tenho também uma noção de UX/UI, pois apesar de não ter estudado a área a fundo, tenho 8 anos de experiência com design gráfico, o que me facilita bastante quando quero fazer um protótipo de uma interface antes de começar a programar. Apesar de estar me tornando um desenvolvedor full stack, eu não me importaria em ser contratado para trabalhar em apenas umas das stacks, pois as duas áreas me interessam bastante.
+                    <br><br> Atualmente estou a procura de oportunidades de estágio que me possibilite crescer profissionalmente na área. Sou bastante auto motivado e me esforçarei ao meu máximo para aprender e cooperar com a equipe que irei trabalhar. <a href="https://drive.google.com/drive/folders/1PCl04cEmAcexdMKU9UkakR6hqitKN4fI?usp=sharing" target="_blank">Acesse meu currículo aqui.</a><p>
+                </div>
             </div>
-        </div>
+        </section>
 
         <!-- <div class="resume">
             <div class="cButton">
                 <a href="">Currículo</a>
             </div>
         </div> -->
+        <section>
+            <div class="dev-languages">
+                <div class="dev-title">
+                    <h1>Hard<div class="line3"></div></h1>
+                    <h1>Skills</h1>
 
-        <div class="projects">
-            <div class="projects-title">
-                <h1>Projetos<div class="line3"></div></h1>
-                <h1>& estudos</h1>
+                </div>
+                <ul class="dev-languages-cards">
+                    <li><img src="img/html-logo.png"><h2>HTML</h2><h3>Avançado</h3></li>
+                    <li><img src="img/css-logo.png"><h2>CSS</h2><h3>Avançado</h3></li>
+                    <li><img src="img/js-logo.png"><h2>JavaScript</h2><h3>Intermediário</h3></li>
+                    <li><img src="img/csharp-logo.png"><h2>C#</h2><h3>Básico</h3></li>
+                    <li><img src="img/mysql-logo.png"><h2>MySql</h2><h3>Básico</h3></li>
+                </ul>
             </div>
-        </div>
-        <div class="cards-conteiner">
-            <div class="card" style="background-image:url(img/clock.png);">
-                <h2>Fev / 2022</h2>
-                <h1>Clock</h1>
-                <p>Esse é um estudo que fiz para entender o funcionamento das Datas através do JavaScript. Para integrar com os elementos HTML e CSS, foi necessário converter os milisegundos obtido através do Date.now() para medidas em graus.</p>
-                <p>Ele está com algum erro de compatibilidade no Firefox (estou procurando solucionar e aprender com isso), mas funciona no Chrome, Opera e Microsoft Edge.</p>
-                
-                <a class="card-button" href="../projects/clock/index.html" target="_blank">Ver projeto</a>
+
+        </section>
+        <section>
+            <div class="projects">
+                <div class="projects-title">
+                    <h1>Projetos<div class="line3"></div></h1>
+                    <h1>& estudos</h1>
+                </div>
             </div>
-            <div class="card" style="background-image:url(img/GitHub-Logo.jpg);">
-                <h2>Fev / 2022 [em andamento]</h2>
-                <h1>GitHub explicado</h1>
-                <p>Este é um site que ao mesmo tempo que aplicava os conceitos que aprendia sobre git e github, documentei os comandos explicados para facilitar a minha absorvição de conteúdo, usando este material como consulta caso eu precisasse.</p>
-                <p>Esse é um projeto que ainda está em andamento.</p>
-                <a class="card-button" href="../projects/GitHub/index.html" target="_blank">Ver projeto</a>
-            </div>
-            <div class="card" style="background-image:url(img/coverSite.jpg);">
-                <h2>Jan / 2022</h2>
-                <h1>Este site</h1>
-                <p>O propósito principal deste site é apresentar meu portfólio e deixar minha marca no mundo online, mas além disso, me ajuda nos meus estudos, pois com ele eu posso colocar a mão no código e praticar aquilo que eu venho aprendendo.</p>
+            <div class="cards-conteiner">
+                <div class="card" style="background-image:url(img/graphic.png);">
+                    <h2>Mar / 2022 [em andamento]</h2>
+                    <h1>Juros compostos</h1>
+                    <p>Essa é uma calculadora de juros compostos que mostra o desempenho do investimento mês a mês, utilizando Chart.js para a construção de um gráfico.</p>
+                    <p>Além disso, o programa possui uma tabela abaixo que mostra de forma detalhada todas as informações como o Juros do Mês, Juros Acumulado, Total Investido e o Total Acumulado.</p>
+                    <p>Em breve acrescentarei mais funções e melhorias.</p>
                     
-                <p>Ainda falta muita coisa para que eu finalmente esteja satisfeito, por isso esse site esterá passando por atualizações constantes, mas é um começo. É como uma famosa frase diz, "feito melhor que perfeito".</p>
-                <!-- <a class="card-button" href="">Veja mais</a> -->
-            </div>
-            <div class="card" style="background-image:url(img/Mobile\ -\ Final.jpg);">
-                <h2>Jul / 2020</h2>
-                <h1>Synthwave Avenue</h1>
-                <p>Esse foi um projeto em grupo, onde tivemos que escolher um estilo musical para o projeto. Escolhemos o Synthwave como tema principal do site e então começamos a fazer a pesquisa, identidade visual, logos, UX/UI e um artigo científico detalhando todo o projeto, do conceito a concepção. </p>
+                    <a class="card-button" href="../projects/juros-compostos/index.html" target="_blank">Ver projeto</a>
+                </div>
+                <div class="card" style="background-image:url(img/clock.png);">
+                    <h2>Fev / 2022</h2>
+                    <h1>Clock</h1>
+                    <p>Esse é um estudo que fiz para entender o funcionamento das Datas através do JavaScript. Para integrar com os elementos HTML e CSS, foi necessário converter os milisegundos obtido através do Date.now() para medidas em graus.</p>
+                    <p>Ele está com algum erro de compatibilidade no Firefox (estou procurando solucionar e aprender com isso), mas funciona no Chrome, Opera e Microsoft Edge.</p>
                     
-                <p>Em breve estará disponível para visualização.</p>
-                <a class="card-button" href="../projects/SynthwaveAvenue/index.html" target="_blank">Ver projeto</a>
+                    <a class="card-button" href="../projects/clock/index.html" target="_blank">Ver projeto</a>
+                </div>
+                <div class="card" style="background-image:url(img/GitHub-Logo.jpg);">
+                    <h2>Fev / 2022 [em andamento]</h2>
+                    <h1>GitHub explicado</h1>
+                    <p>Este é um site que ao mesmo tempo que aplicava os conceitos que aprendia sobre git e github, documentei os comandos explicados para facilitar a minha absorvição de conteúdo, usando este material como consulta caso eu precisasse.</p>
+                    <p>Esse é um projeto que ainda está em andamento.</p>
+                    <a class="card-button" href="../projects/GitHub/index.html" target="_blank">Ver projeto</a>
+                </div>
+                <div class="card" style="background-image:url(img/coverSite.jpg);">
+                    <h2>Jan / 2022</h2>
+                    <h1>Este site</h1>
+                    <p>O propósito principal deste site é apresentar meu portfólio e deixar minha marca no mundo online, mas além disso, me ajuda nos meus estudos, pois com ele eu posso colocar a mão no código e praticar aquilo que eu venho aprendendo.</p>
+                        
+                    <p>Ainda falta muita coisa para que eu finalmente esteja satisfeito, por isso esse site esterá passando por atualizações constantes, mas é um começo. É como uma famosa frase diz, "feito melhor que perfeito".</p>
+                    <!-- <a class="card-button" href="">Veja mais</a> -->
+                </div>
+                <div class="card" style="background-image:url(img/Mobile\ -\ Final.jpg);">
+                    <h2>Jul / 2020</h2>
+                    <h1>Synthwave Avenue</h1>
+                    <p>Esse foi um projeto em grupo, onde tivemos que escolher um estilo musical para o projeto. Escolhemos o Synthwave como tema principal do site e então começamos a fazer a pesquisa, identidade visual, logos, UX/UI e um artigo científico detalhando todo o projeto, do conceito a concepção. </p>
+                    <a class="card-button" href="../projects/SynthwaveAvenue/index.html" target="_blank">Ver projeto</a>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer class="footer">
         <div>
